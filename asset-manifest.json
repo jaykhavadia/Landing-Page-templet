@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Landing-Page-templet/static/css/main.9356546a.css",
+    "main.js": "/Landing-Page-templet/static/js/main.fd13f648.js",
+    "static/js/453.68693753.chunk.js": "/Landing-Page-templet/static/js/453.68693753.chunk.js",
+    "static/media/watch2.png": "/Landing-Page-templet/static/media/watch2.7485a5e6b79a4bc302b8.png",
+    "static/media/watch4.png": "/Landing-Page-templet/static/media/watch4.eecef1457fccd1f88474.png",
+    "static/media/watch1.png": "/Landing-Page-templet/static/media/watch1.e86c46d32676b6194bed.png",
+    "static/media/watches.png": "/Landing-Page-templet/static/media/watches.5b149394163cc5e4bcb9.png",
+    "static/media/watch3.png": "/Landing-Page-templet/static/media/watch3.7284a3900faecc5325e8.png",
+    "static/media/logo.png": "/Landing-Page-templet/static/media/logo.02aa2da9bb553da044e8.png",
+    "static/media/product-01.jpg": "/Landing-Page-templet/static/media/product-01.0e915bd3d9d246d6b24b.jpg",
+    "static/media/product-02.jpg": "/Landing-Page-templet/static/media/product-02.868781ad2ec8d64c7aff.jpg",
+    "index.html": "/Landing-Page-templet/index.html",
+    "main.9356546a.css.map": "/Landing-Page-templet/static/css/main.9356546a.css.map",
+    "main.fd13f648.js.map": "/Landing-Page-templet/static/js/main.fd13f648.js.map",
+    "453.68693753.chunk.js.map": "/Landing-Page-templet/static/js/453.68693753.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9356546a.css",
+    "static/js/main.fd13f648.js"
+  ]
+}
