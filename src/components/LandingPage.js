@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import ContactSection from "./ContactSection";
 import watch from "../assets/img/watches.png";
+import watch1 from "../assets/img/watch1.png";
+import watch2 from "../assets/img/watch2.png";
+import watch3 from "../assets/img/watch3.png";
+import watch4 from "../assets/img/watch4.png";
 import clock from "../assets/img/product-01.jpg";
 import glasses from "../assets/img/product-02.jpg";
 import { ProductCard } from "./common/productCard";
@@ -17,7 +21,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className='bg-black h-auto'>
+    <div className='bg-gradient-to-b from-black to-blue-500  h-auto'>
       <div className='p-10'>
         <Grid container spacing={2} columns={16}>
           <Grid item xs={8}>
@@ -45,16 +49,16 @@ const LandingPage = () => {
         </Grid>
       </div>
       <div className=''>
-        <div className='py-12 bg-black'>
+        <div className='py-12 bg-transparent'>
           <div className='container mx-auto'>
             <h2 className='text-3xl font-semibold text-center text-white mb-8'>
               Our Products
             </h2>
-            <div className='px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
-              <ProductCard title='Product Name' image={watch} />
-              <ProductCard title='Product Name' image={watch} />
-              <ProductCard title='Product Name' image={watch} />
-              <ProductCard title='Product Name' image={watch} />
+            <div className='px-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+              <ProductCard title='LOVELY MOON' image={watch1} />
+              <ProductCard title='HOT SUN' image={watch2} />
+              <ProductCard title='SHINING STAR' image={watch3} />
+              <ProductCard title='BLACK DRAGON' image={watch4} />
             </div>
           </div>
         </div>
@@ -85,7 +89,7 @@ const LandingPage = () => {
                   distinctio fugit molestias quasi iure dolores dolorum ab esse,
                   id quibusdam cumque. Provident, eveniet unde!
                 </span>
-                <Button variant='contained'>Contained</Button>
+                <Button  variant='contained'>Contained</Button>
               </div>
             </div>
           </Grid>
@@ -127,7 +131,7 @@ const LandingPage = () => {
                   distinctio fugit molestias quasi iure dolores dolorum ab esse,
                   id quibusdam cumque. Provident, eveniet unde!
                 </span>
-                <Button variant='contained'>Contained</Button>
+                <Button variant="contained" size="large">Contained</Button>
               </div>
             </div>
           </Grid>
@@ -146,29 +150,29 @@ const LandingPage = () => {
           </span>
           <div className='px-36 py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
             <ProductCard
-              title='Accessories'
-              description='8 Products Available'
-              image={watch}
+              title='GOLD'
+              description='2 Products Available'
+              image={watch2}
             />
             <ProductCard
-              title='Bags'
+              title='SILVER'
               description='8 Products Available'
-              image={watch}
+              image={watch1}
             />
+              <ProductCard
+                title='BLACK'
+                description='5 Products Available'
+                image={watch4}
+              />
             <ProductCard
-              title='Electronics'
-              description='8 Products Available'
-              image={watch}
-            />
-            <ProductCard
-              title='Shoes'
-              description='8 Products Available'
-              image={watch}
+              title='WHITE'
+              description='3 Products Available'
+              image={watch3}
             />
           </div>
         </div>
         <div className='mt-5 flex items-center justify-center' >
-          <Button variant="contained" size="large">Explore All Category</Button>
+          <Button color='inherit' variant="contained" size="large">Explore All Category</Button>
         </div>
       </div>
       <ContactSection />

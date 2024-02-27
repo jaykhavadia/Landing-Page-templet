@@ -8,13 +8,12 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
+import logo from '../assets/img/logo.png'
 
-const pages = ["Home", "Shop", "Products"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Header = () => {
@@ -37,10 +36,10 @@ const Header = () => {
   };
 
   return (
-    <AppBar position='static'>
+    <AppBar position='static' color="primary">
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <img className='w-10/1 h-10' src={logo} alt='' />
           <Typography
             variant='h6'
             noWrap
@@ -49,96 +48,15 @@ const Header = () => {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
+              fontFamily: "rqndpro",
               fontWeight: 700,
-              letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            LOGO
+            {/* NEXT GEN WATCH */}
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size='large'
-              aria-label='account of current user'
-              aria-controls='menu-appbar'
-              aria-haspopup='true'
-              onClick={handleOpenNavMenu}
-              color='inherit'
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id='menu-appbar'
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              <div>
-                <ul className='flex space-x-6'>
-                  <li>
-                    <Link to='/' className='hover:text-gray-300'>
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to='/shop' className='hover:text-gray-300'>
-                      Shop
-                    </Link>
-                  </li>
-                  <li className='relative group'>
-                    <span className='cursor-pointer hover:text-gray-300'>
-                      Products
-                    </span>
-                    <ul className='absolute hidden bg-gray-900 text-white p-4 rounded-lg w-48 group-hover:block'>
-                      <li className='mt-2'>
-                        <div>New Arrivals</div>
-                      </li>
-                      <li className='mt-2 hover:text-gray-300 '>
-                        <Link to='/dresses'>Dresses</Link>
-                      </li>
-                      <li className='mt-2 hover:text-gray-300 '>
-                        <Link to='/jackets'>Jackets</Link>
-                      </li>
-                      <li className='mt-2 hover:text-gray-300 '>
-                        <Link to='/sweatshirts'>Sweatshirts</Link>
-                      </li>
-                      <li className='mt-2 hover:text-gray-300 '>
-                        <Link to='/tops-tees'>Tops & Tees</Link>
-                      </li>
-                      <li className='mt-2 hover:text-gray-300 '>
-                        <Link to='/party-dresses'>Party Dresses</Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <Link to='/contact' className='hover:text-gray-300'>
-                      Contact
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              {/* {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))} */}
-            </Menu>
-          </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant='h5'
@@ -180,20 +98,17 @@ const Header = () => {
                       <div>New Arrivals</div>
                     </li>
                     <li className='mt-2 hover:text-gray-300 '>
-                      <Link to='/dresses'>Dresses</Link>
-                    </li>
-                    <li className='mt-2 hover:text-gray-300 '>
-                      <Link to='/jackets'>Jackets</Link>
-                    </li>
-                    <li className='mt-2 hover:text-gray-300 '>
-                      <Link to='/sweatshirts'>Sweatshirts</Link>
-                    </li>
-                    <li className='mt-2 hover:text-gray-300 '>
-                      <Link to='/tops-tees'>Tops & Tees</Link>
-                    </li>
-                    <li className='mt-2 hover:text-gray-300 '>
-                      <Link to='/party-dresses'>Party Dresses</Link>
-                    </li>
+                        <Link to='/lovely-moon'>Lovely Moon</Link>
+                      </li>
+                      <li className='mt-2 hover:text-gray-300 '>
+                        <Link to='/hot-sun'>Hot Sun</Link>
+                      </li>
+                      <li className='mt-2 hover:text-gray-300 '>
+                        <Link to='/shining-star'>Shining Star</Link>
+                      </li>
+                      <li className='mt-2 hover:text-gray-300 '>
+                        <Link to='/black-dragon'>Black Dragon</Link>
+                      </li>
                   </ul>
                 </li>
                 <li>

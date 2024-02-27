@@ -11,17 +11,18 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Grid from "@mui/material/Grid";
+import Logo from '../assets/img/logo.png'
 
 const ContactSection = () => {
   return (
-    <section className='relative py-10 bg-blue-900'>
-      <div className='flex justify-evenly mx-auto bg-blue-900'>
+    <section className='relative py-10 bg-transparent'>
+      <div className='flex justify-evenly mx-auto bg-transparent'>
         <Grid className='px-10' container spacing={4}>
           <Grid item xs>
             <div className='w-50 content-start items-start'>
               <div className='text-white text-start'>
                 <img
-                  src='path_to_your_logo'
+                  src={Logo}
                   alt='Logo'
                   className='mx-auto h-16 mb-4'
                 />
@@ -30,7 +31,7 @@ const ContactSection = () => {
                     className='text-2xl mr-2'
                     icon={faMapLocationDot}
                   />
-                  Shop 009A, Level 4, Block A, Demo Park, Ottawa
+                  Shop 009A, Level 4, Block A, Demo Park
                 </p>
                 <p className='mt-3'>
                   <FontAwesomeIcon
@@ -50,7 +51,7 @@ const ContactSection = () => {
             </div>
           </Grid>
           <Grid item xs>
-            <div className='w-auto content-center items-center'>
+            <div className='w-auto content-center items-center bg-transparent'>
               <div className='text-white'>
                 <div className='text-white text-4xl font-bold'>My Account</div>
                 <div className='text-start mt-3'>
@@ -111,7 +112,7 @@ const ContactSection = () => {
           </Grid>
           <Grid item xs>
           <div className='w-auto content-center items-center'>
-          <div className='container mx-auto bg-blue-900 '>
+          <div className='container mx-auto bg-transparent '>
             <div className='text-center'>
               <h2 className='text-4xl font-bold text-white mb-4'>Contact Us</h2>
               <p className='text-white'>Have questions? Reach out to us!</p>
